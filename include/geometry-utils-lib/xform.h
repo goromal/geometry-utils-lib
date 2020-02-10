@@ -4,7 +4,6 @@
 #include <Eigen/Geometry>
 #include <math.h>
 #include <iostream>
-#include "constants.h"
 #include "quat.h"
 
 using namespace Eigen;
