@@ -239,7 +239,9 @@ public:
     }
     else if (d < -0.99999999)
     {
-      q_out.arr_ << (T)0, (T)1, (T)0, (T)0; // There are an infinite number of solutions here, choose one
+        // TODO Questionable logic...
+//      q_out.arr_ << (T)0, (T)1, (T)0, (T)0; // There are an infinite number of solutions here, choose one
+        q_out.arr_ << (T)0, (T)0, (T)1, (T)0; // This choice works better for vector comparisons with only nonzero x components (as I like to do with arrows...)
     }
     else
     {
